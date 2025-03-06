@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dante Controller Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Offline Dante Controller Editor</h1>
+    </header>
+
+    <div id="deviceList">
+        <h2>Device List</h2>
+        <button id="addDevice">Add Device</button>
+        <ul id="devices"></ul>
+    </div>
+
+    <div id="patchMatrix">
+        <h2>Patch Matrix</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Device</th>
+                    <th>Input Channel</th>
+                    <th>Output Channel</th>
+                </tr>
+            </thead>
+            <tbody id="matrixBody"></tbody>
+        </table>
+    </div>
+
+    <button id="exportBtn">Export to XML</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
